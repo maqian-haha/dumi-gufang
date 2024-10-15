@@ -3,9 +3,9 @@
 # 先构建
 npm run build
 cd ./deploy
-rm -rf docs-dist
+rm -rf dist
 cd ..
-mv docs-dist ./deploy/
+mv dist ./deploy/
 git add -A
 if [ $2 = "N" ]; then
 git commit -m "$1" --no-verify

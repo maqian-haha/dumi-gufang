@@ -1,7 +1,7 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  outputPath: 'docs-dist',
+  outputPath: 'dist',
   // locales: [
   //   { id: 'zh-CN', name: '中文', },
   //   { id: 'en-US', name: 'English', }
@@ -19,12 +19,12 @@ export default defineConfig({
   scripts: [
     `window.onload=function(){
       document.getElementsByClassName('dumi-default-logo')[0].onclick=function(){
-        this.href="/product-and-servies";
+        this.href= "/product-and-servies";
         return false;
       };
     }
-    if(window.location.pathname==='/') {
-      window.location.href='/product-and-servies'
+    if(window.location.pathname=== "/") {
+      window.location.href= '/product-and-servies'
     }
     `,
   ],
